@@ -1,0 +1,23 @@
+public class Planta {
+    private String tipo;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        super.tipo = "Orquidea";
+    }
+}
+
+Este codigo no compila porque super solo se puede utilizar dentro de una clase derivada.
+
+class Animal {
+    private String especie;
+}
+
+class Pez extends Animal {
+    public void mostrar() {
+        System.out.println(super.especie);
+    }
+}
+
+Este codigo no compila porque el atributo especie es privado en la clase Animal.

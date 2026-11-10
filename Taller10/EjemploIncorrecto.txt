@@ -1,0 +1,28 @@
+class Vehiculo {
+    public void acelerar(int velocidad) {
+        System.out.println(velocidad);
+    }
+}
+
+class Coche extends Vehiculo {
+    @Override
+    public void acelerar() {
+        System.out.println("El coche acelera.");
+    }
+}
+
+Este codigo no compila porque el metodo acelerar tiene una firma diferente.
+
+class Animal {
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido.");
+    }
+}
+
+class Gato extends Animal {
+    public void hacerSonido() {
+        System.out.println("El gato maulla.");
+    }
+}
+
+Este codigo compila, pero omite @Override, que ayuda a detectar errores.
